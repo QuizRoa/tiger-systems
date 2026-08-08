@@ -1,0 +1,313 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-main: #0F172A;
+    --border-main: #243a6f;
+    --card-blue: #18335e;
+    --card-blue-hover: #1951ab;
+    --card-purple: #58185e;
+    --card-purple-hover: #8a2993;
+    --btn-gold: rgb(210, 150, 38);
+    --btn-gold-shadow: rgb(202, 139, 21);
+    --text-light: #F8FAFC;
+    --text-muted: #94A3B8;
+}
+
+body {
+    background-color: #020617;
+    color: var(--text-light);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    padding: 20px 10px;
+}
+
+main {
+    background-color: var(--bg-main);
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 35px;
+    border: 8px solid var(--border-main);
+}
+
+header /* ==========================================
+1. FUENTE & RESET GENERAL
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-body: #020617;
+    --bg-main: #0F172A;
+    --border-main: rgba(255, 255, 255, 0.1);
+    
+    /* Colores de tarjetas e IA */
+    --card-bg: rgba(30, 41, 59, 0.6);
+    --card-blue-border: #38BDF8;
+    --card-purple-border: #A855F7;
+    
+    /* Botón WhatsApp / CTA */
+    --btn-gold: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    --btn-gold-glow: rgba(245, 158, 11, 0.4);
+    
+    /* Tipografía */
+    --text-light: #F8FAFC;
+    --text-muted: #94A3B8;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-light);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    padding: 20px 10px;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p, h1, h2, h3 {
+    overflow-wrap: break-word;
+}
+
+/* ==========================================
+   2. CONTENEDOR PRINCIPAL & HEADER
+   ========================================== */
+main {
+    background-color: var(--bg-main);
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 28px;
+    border: 1px solid var(--border-main);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    margin-bottom: 2.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 0.5rem;
+    background: linear-gradient(135deg, #38BDF8 0%, #A855F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+header h2 {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-top: 0.2rem;
+}
+
+/* ==========================================
+3. SECCIÓN DE SERVICIOS (GLASSMORPHISM)
+   ========================================== */
+.servicios-ofrecidos {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+    padding: 1.25rem;
+    width: 220px;
+    min-height: 215px;
+    border-radius: 1.25rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Hover con elevación y neón */
+.servicio1:hover {
+    transform: translateY(-6px);
+    border-color: var(--card-blue-border);
+    box-shadow: 0 12px 25px -5px rgba(56, 189, 248, 0.25);
+}
+
+.servicio2:hover {
+    transform: translateY(-6px);
+    border-color: var(--card-purple-border);
+    box-shadow: 0 12px 25px -5px rgba(168, 85, 247, 0.25);
+}
+
+.objective {
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.description {
+    color: #CBD5E1;
+    font-size: 0.88rem;
+    line-height: 1.4;
+}
+
+/* ==========================================
+   4. CAJA DE SUGERENCIA / CTA
+   ========================================== */
+.caja-sugerencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.75rem;
+    border-radius: 1.25rem;
+    margin: 2.5rem 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sugerencia-texto {
+    text-align: left;
+}
+
+.pregunta {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.respuesta {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.sugerencia-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.mensaje {
+    font-size: 0.9rem;
+    color: #CBD5E1;
+}
+
+.btn-whatsapp {
+    background: var(--btn-gold);
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 0 20px var(--btn-gold-glow);
+}
+
+/* ==========================================
+   5. SOBRE NOSOTROS & FOOTER
+   ========================================== */
+.sobre-nosotros {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ==========================================
+   6. ESTILOS RESPONSIVOS (MEDIA QUERIES)
+   ========================================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem 1rem;
+        border-radius: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .caja-sugerencia {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sugerencia-texto, 
+    .sugerencia-contacto {
+        text-align: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* Teléfonos móviles */
+@media (max-width: 480px) {
+    body {
+        padding: 10px 5px;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    header h2 {
+        font-size: 0.95rem;
+    }
+
+    .card {
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .btn-whatsapp {
+        width: 100%;
+        text-align: center;
+    }
+}
