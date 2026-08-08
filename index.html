@@ -3,98 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiger Systems</title>
+    <meta name="description" content="Tiger Systems — desarrollo web full stack, ERP/CRM, e-commerce e IA. Presupuesto sin compromiso, respuesta en menos de 24h.">
+    <meta name="theme-color" content="#0b1a2e">
+    <meta property="og:title" content="Tiger Systems — Web Solutions & Software">
+    <meta property="og:description" content="Digitalización, sistemas a medida e IA. Presupuesto sin compromiso.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="tii.png">
+    <title>Tiger Systems — Web Solutions & Software</title>
+    <link rel="icon" href="tii.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <main>
-        <header>
-            <div class="header-content">
-                <img src="tii.png" alt="Logo de Tiger Systems" width="175">
-                <h1>Tiger Systems</h1>
-                <h2>Desarrolladores Web - Full Stack</h2>
-            </div>  
+    <!-- Capas de atmósfera: profundidad sin distraer del CTA -->
+    <div class="atmosphere" aria-hidden="true">
+        <div class="atmosphere__glow atmosphere__glow--orange"></div>
+        <div class="atmosphere__glow atmosphere__glow--blue"></div>
+        <div class="atmosphere__orb atmosphere__orb--a"></div>
+        <div class="atmosphere__orb atmosphere__orb--b"></div>
+        <div class="atmosphere__circuit"></div>
+        <div class="atmosphere__grid"></div>
+        <div class="atmosphere__noise"></div>
+        <div class="atmosphere__vignette"></div>
+    </div>
+
+    <main class="shell">
+        <header class="brand">
+            <div class="brand__seal">
+                <img class="brand__mark" src="tii.png" alt="Tiger Systems" width="96" height="96">
+                <span class="brand__ring" aria-hidden="true"></span>
+            </div>
+            <div class="brand__copy">
+                <p class="brand__eyebrow">
+                    <span class="brand__code" aria-hidden="true">&lt;/&gt;</span>
+                    Web Solutions &amp; Software
+                </p>
+                <h1 class="brand__name">Tiger <span>Systems</span></h1>
+                <p class="brand__tag">Full stack con fuerza y precisión: digitalizamos ideas y las convertimos en sistemas que escalan.</p>
+            </div>
+            <ul class="brand__trust" aria-label="Señales de confianza">
+                <li>
+                    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+                    &lt;24h respuesta
+                </li>
+                <li>
+                    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V6l7-3z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>
+                    Sin compromiso
+                </li>
+                <li>
+                    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4 4L19 7" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Transparente
+                </li>
+            </ul>
         </header>
 
-        <section class="servicios">
-            <div class="servicios-ofrecidos">
-                <article class="card servicio1">
-                    <span class="objective">ESTRATEGIA</span>
-                    <h3 class="title">Digitalización de Negocios</h3>
-                    <p class="description">Transforma tu operación física en un ecosistema digital eficiente y escalable.</p>
-                </article>
+        <div class="services-head">
+            <p class="services-head__label">Capacidades</p>
+            <span class="services-head__rule" aria-hidden="true"></span>
+            <p class="services-head__hint">Del negocio a la IA — un equipo, un solo contacto</p>
+        </div>
 
-                <article class="card servicio1">
-                    <span class="objective">GESTIÓN</span>
-                    <h3 class="title">Sistemas ERP/CRM</h3>
-                    <p class="description">Centraliza ventas, inventario y clientes en una plataforma unificada a tu medida.</p>
-                </article>
+        <section class="services" aria-label="Servicios">
+            <article class="service" style="--i:0">
+                <div class="service__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 19V9l8-5 8 5v10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 19v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="1.2" fill="currentColor"/></svg>
+                </div>
+                <div class="service__body">
+                    <span class="service__kicker">Estrategia</span>
+                    <h2 class="service__title">Digitalización</h2>
+                    <p class="service__desc">De lo físico a un ecosistema digital escalable.</p>
+                </div>
+            </article>
 
-                <article class="card servicio1">
-                    <span class="objective">OPERACIONES</span>
-                    <h3 class="title">Almacenes y Logística</h3>
-                    <p class="description">Control de stock, trazabilidad y reportes en tiempo real para tu bodega o almacén.</p>
-                </article>
+            <article class="service" style="--i:1">
+                <div class="service__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="13" y="4" width="8" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="13" width="8" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="13" y="13" width="8" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+                </div>
+                <div class="service__body">
+                    <span class="service__kicker">Gestión</span>
+                    <h2 class="service__title">ERP / CRM</h2>
+                    <p class="service__desc">Ventas, inventario y clientes en una sola plataforma.</p>
+                </div>
+            </article>
 
-                <article class="card servicio1">
-                    <span class="objective">COMERCIO</span>
-                    <h3 class="title">Tiendas Online</h3>
-                    <p class="description">E-commerce optimizado, pasarela de pagos y experiencia de compra memorable.</p>
-                </article>
+            <article class="service" style="--i:2">
+                <div class="service__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 8h16v11H4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 8V6a4 4 0 018 0v2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 13h16" stroke="currentColor" stroke-width="1.7"/></svg>
+                </div>
+                <div class="service__body">
+                    <span class="service__kicker">Operaciones</span>
+                    <h2 class="service__title">Almacenes</h2>
+                    <p class="service__desc">Stock, trazabilidad y reportes en tiempo real.</p>
+                </div>
+            </article>
 
-                <article class="card servicio1">
-                    <span class="objective">DESARROLLO</span>
-                    <h3 class="title">Aplicaciones Web a Medida</h3>
-                    <p class="description">Desarrollo full stack con tecnología moderna, rápida y segura desde cero.</p>
-                </article>
+            <article class="service" style="--i:3">
+                <div class="service__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="9" cy="19" r="1.6" fill="currentColor"/><circle cx="17" cy="19" r="1.6" fill="currentColor"/><path d="M3 4h2l2.2 10.2a2 2 0 002 1.6h7.6a2 2 0 001.9-1.4L21 8H7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="service__body">
+                    <span class="service__kicker">Comercio</span>
+                    <h2 class="service__title">Tiendas online</h2>
+                    <p class="service__desc">E-commerce con pagos y experiencia memorable.</p>
+                </div>
+            </article>
 
-                <article class="card servicio1">
-                    <span class="objective">CONSULTORÍA</span>
-                    <h3 class="title">Consultoría Tecnológica</h3>
-                    <p class="description">Análisis de tu negocio y hoja de ruta digital clara para crecer sin fricciones.</p>
-                </article>
+            <article class="service" style="--i:4">
+                <div class="service__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M8 7L4 12l4 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 7l4 5-4 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 5l-3 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                </div>
+                <div class="service__body">
+                    <span class="service__kicker">Desarrollo</span>
+                    <h2 class="service__title">Apps a medida</h2>
+                    <p class="service__desc">Full stack moderno, rápido y seguro desde cero.</p>
+                </div>
+            </article>
 
-                <article class="card servicio2">
-                    <span class="objective">IA</span>
-                    <h3 class="title">Chatbots con IA</h3>
-                    <p class="description">Asistentes inteligentes para atención al cliente 24/7, soporte y ventas automatizadas.</p>
-                </article>
+            <article class="service" style="--i:5">
+                <div class="service__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                </div>
+                <div class="service__body">
+                    <span class="service__kicker">Consultoría</span>
+                    <h2 class="service__title">Hoja de ruta</h2>
+                    <p class="service__desc">Análisis claro para crecer sin fricciones.</p>
+                </div>
+            </article>
 
-                <article class="card servicio2">
-                    <span class="objective">IA</span>
-                    <h3 class="title">Automatización con IA</h3>
-                    <p class="description">Flujos de trabajo que aprenden: clasifica, resume, genera y actúa sin intervención humana.</p>
-                </article>
+            <article class="service service--accent" style="--i:6">
+                <div class="service__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M5 16a6 6 0 0111.7-2H19a3 3 0 010 6H6a3.5 3.5 0 01-1-6.9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 11h.01M12 11h.01M15 11h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+                </div>
+                <div class="service__body">
+                    <span class="service__kicker">IA</span>
+                    <h2 class="service__title">Chatbots</h2>
+                    <p class="service__desc">Atención 24/7, soporte y ventas automatizadas.</p>
+                </div>
+            </article>
 
-                <article class="card servicio2">
-                    <span class="objective">IA</span>
-                    <h3 class="title">Orquestación de Agentes IA</h3>
-                    <p class="description">Pipelines multi-agente con RAG, memoria persistente y herramientas conectadas a tus sistemas.</p>
-                </article>
+            <article class="service service--accent" style="--i:7">
+                <div class="service__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="7" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="7" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="17" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9.3 11l5-2.8M9.3 13l5 2.8" stroke="currentColor" stroke-width="1.7"/></svg>
+                </div>
+                <div class="service__body">
+                    <span class="service__kicker">IA</span>
+                    <h2 class="service__title">Automatización</h2>
+                    <p class="service__desc">Flujos que clasifican, resumen y actúan solos.</p>
+                </div>
+            </article>
+
+            <article class="service service--accent" style="--i:8">
+                <div class="service__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="5" cy="18" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="19" cy="18" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7.2v3.2M12 10.4L6.8 16M12 10.4l5.2 5.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                </div>
+                <div class="service__body">
+                    <span class="service__kicker">IA</span>
+                    <h2 class="service__title">Agentes</h2>
+                    <p class="service__desc">Orquestación multi-agente con RAG y tus sistemas.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="cta__badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3l2.2 4.6L19 9l-3.5 3.3.9 5.2L12 15.2 7.6 17.5l.9-5.2L5 9l4.8-1.4L12 3z" fill="currentColor"/></svg>
+            </div>
+            <div class="cta__copy">
+                <h2 id="cta-title">Tu próximo sistema empieza con una conversación</h2>
+                <p>Cuéntanos la idea. Presupuesto sin compromiso · respuesta en &lt;24h · trabajamos contigo de punta a punta.</p>
+            </div>
+            <div class="cta__actions">
+                <a
+                    class="btn btn--whatsapp"
+                    href="https://wa.me/584246072880?text=Hola%2C%20quisiera%20solicitar%20un%20presupuesto%20con%20Tiger%20Systems"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="logo1.webp" alt="" width="22" height="22">
+                    <span>Hablemos ahora</span>
+                </a>
+                <!-- Sustituye el correo si cambia -->
+                <a
+                    class="btn btn--mail"
+                    href="mailto:tigersystems.dev@gmail.com?subject=Presupuesto%20Tiger%20Systems&body=Hola%2C%20quisiera%20solicitar%20un%20presupuesto."
+                >
+                    <img src="logo2.webp" alt="" width="22" height="22">
+                    <span>Escribir por email</span>
+                </a>
             </div>
         </section>
 
-        <section class="caja-sugerencia">
-            <div class="sugerencia-texto">
-                <p class="pregunta">¿Listo para llevar tu negocio al siguiente nivel?</p>
-                <p class="respuesta">Respuesta en menos de 24h.</p>
-            </div>
-            <div class="sugerencia-contacto">
-                <p class="mensaje">Pide tu presupuesto sin compromiso</p>
-                <a href="https://wa.me/584246072880?text=Hola,%20quisiera%20solicitar%20un%20presupuesto" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">Hablemos ahora</a>
-            </div>
-        </section>
-
-        <section class="sobre-nosotros">
-            <p>
-                Somos desarrolladores freelancers, trabajamos de la mano con el cliente ofreciéndole soluciones modernas, robustas y escalables para digitalizar la idea del negocio o proyecto que tenga en mente. Nuestro trabajo destaca por ser transparente, profesional y flexible orientado a resultados medibles.
+        <footer class="foot">
+            <p class="foot__about">
+                <strong>Tiger Systems</strong> — freelancers full stack. Soluciones modernas, robustas y flexibles, orientadas a resultados medibles.
             </p>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 Tiger Systems. Todos los derechos reservados.</p>
+            <p class="foot__legal">&copy; 2026 Tiger Systems</p>
         </footer>
     </main>
 </body>
 </html>
-
